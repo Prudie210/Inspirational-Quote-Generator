@@ -4,37 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="src/style.css"></script>
+  <link rel="stylesheet" href="src/style.css" />
   <title>Quote Generator</title>
 </head>
 
 <body>
-  <header>
-    <h1>Your Inspire Bot</1>
-      <h2>
-        Inspiring the Happy, Good and Funny in Life!
-        Enjoy some short, beautifule and meaningful quotes about life
-      </h2>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Your Inspire Bot</1>
+        <h2>
+          Inspiring the Happy, Good and Funny in Life!
+          <br />
+          Enjoy some short, beautiful and meaningful quotes about life
+        </h2>
+    </header>
 
-  <main>
-    <form>
-      <input type="text" placeholder="Enter a word or phrase for your quote..." autofocus required autocomplete="off" />
-      <input type="submit" />
-    </form>
-    <div>
-      If you cannot do great things, do small things in a great way.
-      <br />
-      Keep calm and carry on.
-    </div>
-  </main>
+    <main>
+      <form>
+        <input type="text" placeholder="Enter a word or phrase..." autofocus required autocomplete="off"
+          class="instructions" />
+        <input type="submit" class="submit-button" />
+      </form>
+      <div class="poem">
+        If you cannot do great things, do small things in a great way.
+        <br />
+        Keep calm and carry on.
+      </div>
+    </main>
 
-  <footer>
-    This project was coded by 🍀 <strong>Nomkhosi Ngomane</strong> and is open-sourced on
-    <a href="https://github.com/Prudie210/Inspirational-Quote-Generator" target="_blank">GitHub</a> and hosted on <a
-      href="https://inspirational-quote-khosi.netlify.app/" target="_blank">Netlify</a>
-  </footer>
+    <footer>
 
+      This project was coded by 🍀 <strong>Nomkhosi Ngomane</strong> and is open-sourced on
+      <a href="https://github.com/Prudie210/Inspirational-Quote-Generator" target="_blank">GitHub</a> and hosted on <a
+        href="https://inspirational-quote-khosi.netlify.app/" target="_blank">Netlify</a>
+    </footer>
+  </div>
   <script src="src/script.js"></script>
 </body>
 
