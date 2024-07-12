@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <title>Quote Generator</title>
 </head>
 
@@ -20,15 +21,12 @@
     </header>
 
     <main>
-      <form>
+      <form id="quote-generator-form">
         <input type="text" placeholder="Enter a word or phrase..." autofocus required autocomplete="off"
           class="instructions" />
         <input type="submit" class="submit-button" />
       </form>
-      <div class="poem">
-        If you cannot do great things, do small things in a great way.
-        <br />
-        Keep calm and carry on.
+      <div class="phrase" id="quotes">
       </div>
     </main>
 
