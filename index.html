@@ -6,27 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css" />
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <title>Quote Generator</title>
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>Your Inspire Bot</1>
-        <h2>
-          Inspiring the Happy, Good and Funny in Life!
-          <br />
-          Enjoy some short, beautiful and meaningful quotes about life
-        </h2>
+      <h1>Your Inspire Bot</h1>
+      <h2>
+        Inspiring the Happy, Good and Funny in Life!
+        <br />
+        Enjoy some short, beautiful and meaningful quotes about life
+      </h2>
     </header>
 
     <main>
-      <form id="quote-generator-form">
-        <input type="text" placeholder="Enter a word or phrase..." autofocus required autocomplete="off"
-          class="instructions" />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="phrase" id="quotes">
+      <div class="container">
+        <form id="quote-generator-form">
+          <input type="text" placeholder="Enter a word or phrase..." autofocus required autocomplete="off"
+            class="instructions" id="user-instructions" />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e: Life, Self or Motivational</div>
+      </div>
+      <div class="poem hidden" id="quotes">
       </div>
     </main>
 
@@ -37,6 +41,7 @@
         href="https://inspirational-quote-khosi.netlify.app/" target="_blank">Netlify</a>
     </footer>
   </div>
+
   <script src="src/script.js"></script>
 </body>
 
